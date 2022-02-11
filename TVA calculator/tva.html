@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tva calc</title>
+  </head>
+  <body>
+    <input type="number" name="num" id="income" />
+    <button onclick="{getResult()}">Submit</button>
+
+    <script>
+      let tva = 0.2;
+
+      const getResult = () => {
+        let income = document.getElementById("income").value;
+        let addTaxe = income * tva;
+
+        result = income - addTaxe;
+
+        alert("Your final income is " + result);
+      };
+    </script>
+  </body>
+</html>
