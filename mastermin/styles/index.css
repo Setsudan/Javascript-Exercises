@@ -1,0 +1,67 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+  width: 90vw;
+}
+
+body #choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 24vh;
+  position: absolute;
+  top: 40vh;
+  left: 2.5vw;
+}
+
+body #choices button {
+  margin: 1vh;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background: #1d1d1d;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+body #playerhand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40vh;
+}
+
+body #playerhand div {
+  height: 10vh;
+  width: 10vh;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 10vh;
+}
+/*# sourceMappingURL=index.css.map */

@@ -41,7 +41,7 @@ let renderPlayerHand = () => {
  */
 function resetSelected() {
   selectedColors.length = 0;
-  console.log(selectedColors);
+  playerhand.innerHTML = "";
 }
 /**
  * @param {string} Couleur
@@ -60,15 +60,16 @@ function appendColor(thyColor) {
     playerhand.innerHTML = "";
   }
 }
+let result = document.getElementById("result");
+score = 0;
 function checkColors(arr1, arr2) {
   console.log(arr1, arr2);
   for (var i = arr1.length; i--; ) {
     if (arr1[i] !== arr2[i]) {
-      let goodmessage = `color N°${i} is valid`;
-      alert(goodmessage);
+      result.innerHTML = `Vous avez 0`;
     } else {
-      let badmessage = `color N°${i} is invalid`;
-      alert(badmessage);
+      score++;
+      result.innerHTML = `vous avez ${score}/4`;
     }
   }
 }

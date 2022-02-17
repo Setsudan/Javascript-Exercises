@@ -5,22 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #choices {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 20vh;
-        position: absolute;
-        top: 40vh;
-        left: 2.5vw;
-      }
-      #choices div {
-        height: 10vh;
-        width: 10vh;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <div id="choices">
@@ -31,6 +16,7 @@
       <button onclick="resetSelected()" id="reset">reset</button>
       <button onclick="checkColorInit()" id="check">Submit</button>
     </div>
+    <h1 id="result"></h1>
     <div id="playerhand"></div>
     <script src="./index.js"></script>
   </body>
