@@ -5,6 +5,8 @@ body {
   justify-content: center;
   height: 90vh;
   width: 90vw;
+  background: #1d1d1d;
+  color: #efefef;
   #choices {
     display: flex;
     flex-direction: row;
@@ -18,18 +20,21 @@ body {
       height: 10vh;
       width: 10vh;
       border: none;
-      background: #1d1d1d;
-      color: white;
+      background: #efefef;
+      color: #1d1d1d;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 5px;
+      border-radius: 60%;
     }
   }
   #playerhand {
     display: flex;
     flex-direction: row;
-    width: 40vh;
+    width: 50vw;
     div {
+      margin: 1vh;
+      border-radius: 60%;
       height: 10vh;
       width: 10vh;
       color: white;

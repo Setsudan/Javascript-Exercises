@@ -19,7 +19,7 @@ let shuffleEnemyHand = () => {
     botPalette.push(colors[Math.floor(Math.random() * 4)]);
     i++;
   }
-  console.log(botPalette);
+  //console.log(botPalette);
 };
 /**
  * Return la main du jouer sur la page html
@@ -29,8 +29,6 @@ let renderPlayerHand = () => {
   selectedColors.forEach((color) => {
     // Creatin box
     const box = document.createElement("div");
-
-    box.innerText = color;
     box.className = color;
     box.style = `background:${color};`;
     playerhand.appendChild(box);
@@ -42,6 +40,7 @@ let renderPlayerHand = () => {
 function resetSelected() {
   selectedColors.length = 0;
   playerhand.innerHTML = "";
+  result.innerHTML = " ";
 }
 /**
  * @param {string} Couleur
@@ -51,7 +50,7 @@ function resetSelected() {
 function appendColor(thyColor) {
   if (selectedColors.length <= 3) {
     selectedColors.push(thyColor);
-    console.log(selectedColors);
+    //console.log(selectedColors);
     playerhand.innerHTML = ""; // Reset le contenu pour pas créer de doublons
     renderPlayerHand();
   } else {
@@ -61,9 +60,9 @@ function appendColor(thyColor) {
   }
 }
 let result = document.getElementById("result");
-score = 0;
+
 function checkColors(arr1, arr2) {
-  console.log(arr1, arr2);
+  score = 0;
   for (var i = arr1.length; i--; ) {
     if (arr1[i] !== arr2[i]) {
       result.innerHTML = `Vous avez 0`;
